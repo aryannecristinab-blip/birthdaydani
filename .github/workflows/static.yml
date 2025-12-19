@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Feliz Aniversário 🎉</title>
+
+  <style>
+    body {
+      background: linear-gradient(to top, #ffe6f0, #ffffff);
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+      overflow: hidden;
+    }
+
+    img {
+      max-width: 400px;
+      width: 100%;
+      height: auto;
+      margin-bottom: 25px;
+      border-radius: 12px;
+      z-index: 2;
+      position: relative;
+    }
+
+    .mensagem {
+      font-size: 18px;
+      color: #333;
+      max-width: 650px;
+      margin: auto;
+      line-height: 1.6;
+      z-index: 2;
+      position: relative;
+    }
+
+    /* 🎈 Balões */
+    .balloon {
+      position: absolute;
+      bottom: -150px;
+      width: 60px;
+      height: 80px;
+      border-radius: 50%;
+      animation: float 10s infinite ease-in;
+      opacity: 0.8;
+    }
+
+    .balloon::after {
+      content: '';
+      position: absolute;
+      width: 2px;
+      height: 40px;
+      background: #aaa;
+      top: 80px;
+      left: 50%;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-120vh); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🎵 Música da Xuxa -->
+  <iframe width="0" height="0"
+    src="https://www.youtube.com/embed/5G8kG5zj8X0?autoplay=1"
+    allow="autoplay">
+  </iframe>
+
+  <!-- 🐱 GIF -->
+  <img 
+    src="https://media0.giphy.com/media/v1.Y2lkPWZjZGU1NDk1eTN0NDg1Z2tzM2Fjb2tyYXNibTZhaHVwczVob2h2YjkxdmNnZHVlcyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/MDJ9IbxxvDUQM/giphy.gif" 
+    alt="In Love Cat GIF">
+
+  <!-- 💌 Mensagem -->
+  <div class="mensagem">
+    <p>
+      <strong>Parabéns, danizinho!</strong><br><br>
+
+      Que seu dia seja incrível e você o aproveite da forma que você ama.
+      Obrigada por me ensinar um pouco mais a cada dia, você é um exemplo pra mim.
+      Seja feliz e que no seu novo ano tenham menos B.Os pra resolver.
+      <br><br>
+
+      <strong>Feliz Aniversário!! 🎉🎂</strong>
+    </p>
+  </div>
+
+  <!-- 🎈 Balões na tela -->
+  <div class="balloon" style="left: 10%; background: pink; animation-delay: 0s;"></div>
+  <div class="balloon" style="left: 30%; background: lightblue; animation-delay: 2s;"></div>
+  <div class="balloon" style="left: 50%; background: lavender; animation-delay: 4s;"></div>
+  <div class="balloon" style="left: 70%; background: lightgreen; animation-delay: 1s;"></div>
+  <div class="balloon" style="left: 90%; background: peachpuff; animation-delay: 3s;"></div>
+
+</body>
+</html>
